@@ -83,7 +83,7 @@ def send_email_notification(items):
         ),
         "html"
     )
-    msg['Subject'] = 'New items on sale'
+    msg['Subject'] = f'{len(items)} new items on sale'
     msg['From'] = SMTP_USERNAME
     msg['To'] = EMAIL_RECIPIENT
 
